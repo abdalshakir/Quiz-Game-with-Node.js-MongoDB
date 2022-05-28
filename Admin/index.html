@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css"
+        integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+    <title>Document</title>
+</head>
+
+<body>
+    <div class="container card text-white bg-info mb-3" style="max-width: 50rem;">
+        <input type="text" name="" id="question" placeholder="Enter a question">
+        <input type="text" name="" id="optionA" placeholder="Enter option A">
+        <input type="text" name="" id="optionB" placeholder="Enter option B">
+        <input type="text" name="" id="optionC" placeholder="Enter option C">
+        <input type="text" name="" id="correctAnswer" placeholder="Enter correct answer">
+        <button type="button" onclick="addQuestions()" class="btn btn-info" id="add">Add Question</button>
+    </div>
+
+    <script src="https://cdn.jsdelivr.net/npm/axios/dist/axios.min.js"></script>
+    <script src="app.js"></script>
+</body>
+
+</html>

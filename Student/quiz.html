@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css"
+        integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+    <title>Quiz App</title>
+</head>
+
+<body>
+    <div class="card text-white bg-info mb-3" style="max-width: 50rem;">
+        <div class="card-header">
+            <h5>Q NO. <span id="queNum"></span>/5</h5>
+            <h5 style="text-align: right;">Time <span id="min"></span> : <span id="sec"></span></h5>
+        </div>
+        <div class="question m-3">
+            <h4 id="que"></h4>
+            <label class="check-ans">
+                <input name="ans" value="1" type="radio" class="que-option"> <span id="option1"></span>
+            </label>
+            <br>
+            <label class="check-ans">
+                <input name="ans" value="2" type="radio" class="que-option"> <span id="option2"></span>
+            </label>
+            <br>
+            <label class="check-ans">
+                <input name="ans" value="3" type="radio" class="que-option"> <span id="option3"></span>
+            </label>
+        </div>
+        <div class="card-footer bg-light border-dark d-flex justify-content-between">
+            <button onclick="backQuestion()" type="button" id="backButton" class="btn btn-info" disabled>Back</button>
+            <button onclick="nextQuestion()" type="button" id="nextButton" class="btn btn-info">Next</button>
+        </div>
+    </div>
+
+
+
+
+    <script src="https://cdn.jsdelivr.net/npm/axios/dist/axios.min.js"></script>
+    <script src="app.js"></script>
+</body>
+
+</html>
